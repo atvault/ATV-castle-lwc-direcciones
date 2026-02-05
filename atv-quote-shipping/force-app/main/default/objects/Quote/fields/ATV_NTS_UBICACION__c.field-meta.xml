@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ATV_NTS_UBICACION__c</fullName>
+    <defaultValue>&quot;Castle&quot;</defaultValue>
+    <label>UBICACIÓN</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Castle</fullName>
+                <default>true</default>
+                <label>Castle</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

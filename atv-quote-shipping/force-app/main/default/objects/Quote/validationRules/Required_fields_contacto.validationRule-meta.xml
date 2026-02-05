@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_fields_contacto</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  ISPICKVAL(Status, &quot;Accepted&quot;),
+  ISCHANGED(Status),
+  OR(
+    ISBLANK(ContactId)
+  )
+)</errorConditionFormula>
+    <errorDisplayField>ContactId</errorDisplayField>
+    <errorMessage>Para aceptar la cotización, completá: Contacto asociado.</errorMessage>
+</ValidationRule>

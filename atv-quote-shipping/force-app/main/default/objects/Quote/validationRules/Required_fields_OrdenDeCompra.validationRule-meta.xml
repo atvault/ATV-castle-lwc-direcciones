@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_fields_OrdenDeCompra</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  ISPICKVAL(Status, &quot;Accepted&quot;),
+  ISCHANGED(Status),
+  OR(
+    ISBLANK(ATV_NTS_ordenDeCompra__c)
+  )
+)</errorConditionFormula>
+    <errorDisplayField>Direcciones__c</errorDisplayField>
+    <errorMessage>Para aceptar la cotización, completá: N° de orden de compra.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_fields_direcciones</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  ISPICKVAL(Status, &quot;Accepted&quot;),
+  ISCHANGED(Status),
+  OR(
+    ISBLANK(Direcciones__c)
+  )
+)</errorConditionFormula>
+    <errorDisplayField>Direcciones__c</errorDisplayField>
+    <errorMessage>Para aceptar la cotización, completá: Dirección de envío.</errorMessage>
+</ValidationRule>

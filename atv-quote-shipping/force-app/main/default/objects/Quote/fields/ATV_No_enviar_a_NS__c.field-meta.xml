@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ATV_No_enviar_a_NS__c</fullName>
+    <defaultValue>false</defaultValue>
+    <label>No enviar a NS</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

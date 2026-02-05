@@ -1,0 +1,58 @@
+<template>
+    <lightning-card title="Dirección de Envío" icon-name="standard:address">
+        <div class="slds-p-around_small">
+            <!-- Mensaje si no hay AccountId -->
+            <template if:false={hasAccountId}>
+                <div class="slds-text-color_error slds-m-bottom_small">
+                    <lightning-icon icon-name="utility:warning" size="small" class="slds-m-right_x-small"></lightning-icon>
+                    Seteá primero la Cuenta en la Quote
+                </div>
+            </template>
+            
+            <!-- Mensaje si hay AccountId pero no hay direcciones -->
+            <template if:true={hasAccountId}>
+                <template if:false={hasDirecciones}>
+                    <div class="slds-text-color_weak slds-m-bottom_small">
+                        <lightning-icon icon-name="utility:info" size="small" class="slds-m-right_x-small"></lightning-icon>
+                        No hay direcciones de envío disponibles para esta cuenta
+                    </div>
+                </template>
+            </template>
+            
+            <!-- Combobox y botón si hay direcciones -->
+            <template if:true={hasDirecciones}>
+                <div class="slds-form-element slds-m-bottom_small">
+                    <label class="slds-form-element__label" for="direccion-select">
+                        Seleccionar Dirección
+                    </label>
+                    <div class="slds-form-element__control">
+                        <lightning-combobox
+                            id="direccion-select"
+                            name="direccion"
+                            label=""
+                            value={selectedDireccionId}
+                            placeholder="Seleccionar dirección..."
+                            options={direccionOptions}
+                            onchange={handleDireccionChange}
+                            class="slds-m-bottom_small">
+                        </lightning-combobox>
+                    </div>
+                </div>
+                
+                <lightning-button
+                    variant="brand"
+                    label="Aplicar"
+                    title="Aplicar dirección seleccionada"
+                    onclick={handleApply}
+                    disabled={isButtonDisabled}
+                    class="slds-m-top_small">
+                </lightning-button>
+            </template>
+            
+            <!-- Spinner mientras carga -->
+            <template if:true={isLoading}>
+                <lightning-spinner alternative-text="Aplicando dirección..." size="small"></lightning-spinner>
+            </template>
+        </div>
+    </lightning-card>
+</template>

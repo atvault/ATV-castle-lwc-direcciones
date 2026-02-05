@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ATV_NTS_TRANSPORTE__c</fullName>
+    <label>TRANSPORTE</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ALMAR ROSARIO SRL</fullName>
+                <default>false</default>
+                <label>ALMAR ROSARIO SRL</label>
+            </value>
+            <value>
+                <fullName>ARIAS EZEQUIEL (GRUPO REDFOX)</fullName>
+                <default>false</default>
+                <label>ARIAS EZEQUIEL (GRUPO REDFOX)</label>
+            </value>
+            <value>
+                <fullName>BARRY LATIMER</fullName>
+                <default>false</default>
+                <label>BARRY LATIMER</label>
+            </value>
+            <value>
+                <fullName>BERGAMASCHI OSVALDO RAMON</fullName>
+                <default>false</default>
+                <label>BERGAMASCHI OSVALDO RAMON</label>
+            </value>
+            <value>
+                <fullName>BRIDGE ROSARIO SRL</fullName>
+                <default>false</default>
+                <label>BRIDGE ROSARIO SRL</label>
+            </value>
+            <value>
+                <fullName>BURGOS LILIAN GISELLE (transp trans par)</fullName>
+                <default>false</default>
+                <label>BURGOS LILIAN GISELLE (transp trans par)</label>
+            </value>
+            <value>
+                <fullName>CAROSSIO, VAIROLATTI Y CIA</fullName>
+                <default>false</default>
+                <label>CAROSSIO, VAIROLATTI Y CIA</label>
+            </value>
+            <value>
+                <fullName>CATA CARGO</fullName>
+                <default>false</default>
+                <label>CATA CARGO</label>
+            </value>
+            <value>
+                <fullName>CENTRO DE ENCOMIENDAS SANTA FE</fullName>
+                <default>false</default>
+                <label>CENTRO DE ENCOMIENDAS SANTA FE</label>
+            </value>
+            <value>
+                <fullName>CONTE HNOS Y CIA SA</fullName>
+                <default>false</default>
+                <label>CONTE HNOS Y CIA SA</label>
+            </value>
+            <value>
+                <fullName>CORREO ANDREANI SA</fullName>
+                <default>false</default>
+                <label>CORREO ANDREANI SA</label>
+            </value>
+            <value>
+                <fullName>CORREO ARGENTINO</fullName>
+                <default>false</default>
+                <label>CORREO ARGENTINO</label>
+            </value>
+            <value>
+                <fullName>DEAN FUNES CARGAS SRL</fullName>
+                <default>false</default>
+                <label>DEAN FUNES CARGAS SRL</label>
+            </value>
+            <value>
+                <fullName>DEPOSITO CAFFERATA</fullName>
+                <default>false</default>
+                <label>DEPOSITO CAFFERATA</label>
+            </value>
+            <value>
+                <fullName>DHL EXPRESS SA</fullName>
+                <default>false</default>
+                <label>DHL EXPRESS SA</label>
+            </value>
+            <value>
+                <fullName>DIAZ ANIBAL (COMISIONISTA)</fullName>
+                <default>false</default>
+                <label>DIAZ ANIBAL (COMISIONISTA)</label>
+            </value>
+            <value>
+                <fullName>DS CARGAS S.A.S (TRANSPORTE EL QUEBRACHITO)</fullName>
+                <default>false</default>
+                <label>DS CARGAS S.A.S (TRANSPORTE EL QUEBRACHITO)</label>
+            </value>
+            <value>
+                <fullName>EL TERO</fullName>
+                <default>false</default>
+                <label>EL TERO</label>
+            </value>
+            <value>
+                <fullName>ESTACION CAFFERATA SRL</fullName>
+                <default>false</default>
+                <label>ESTACION CAFFERATA SRL</label>
+            </value>
+            <value>
+                <fullName>ESTACION DE CARGAS GONZALEZ</fullName>
+                <default>false</default>
+                <label>ESTACION DE CARGAS GONZALEZ</label>
+            </value>
+            <value>
+                <fullName>ESTACION DE CARGAS OCAMPO</fullName>
+                <default>false</default>
+                <label>ESTACION DE CARGAS OCAMPO</label>
+            </value>
+            <value>
+                <fullName>ESTACION DE CARGAS RIO DE JANEIRO</fullName>
+                <default>false</default>
+                <label>ESTACION DE CARGAS RIO DE JANEIRO</label>
+            </value>
+            <value>
+                <fullName>ESTACION DE CARGAS SAN LORENZO</fullName>
+                <default>false</default>
+                <label>ESTACION DE CARGAS SAN LORENZO</label>
+            </value>
+            <value>
+                <fullName>EST CARGAS ALEM-CORNEJO</fullName>
+                <default>false</default>
+                <label>EST CARGAS ALEM-CORNEJO</label>
+            </value>
+            <value>
+                <fullName>EXPRESO BILETTA SRL</fullName>
+                <default>false</default>
+                <label>EXPRESO BILETTA SRL</label>
+            </value>
+            <value>
+                <fullName>EXPRESO BRIO SRL</fullName>
+                <default>false</default>
+                <label>EXPRESO BRIO SRL</label>
+            </value>
+            <value>
+                <fullName>EXPRESO CARGO SA</fullName>
+                <default>false</default>
+                <label>EXPRESO CARGO SA</label>
+            </value>
+            <value>
+                <fullName>EXPRESO CATAMARCA SRL</fullName>
+                <default>false</default>
+                <label>EXPRESO CATAMARCA SRL</label>
+            </value>
+            <value>
+                <fullName>EXPRESO DIEMAR</fullName>
+                <default>false</default>
+                <label>EXPRESO DIEMAR</label>
+            </value>
+            <value>
+                <fullName>EXPRESO EL IMPALA S.H.</fullName>
+                <default>false</default>
+                <label>EXPRESO EL IMPALA S.H.</label>
+            </value>
+            <value>
+                <fullName>EXPRESO EL TERO SA</fullName>
+                <default>false</default>
+                <label>EXPRESO EL TERO SA</label>
+            </value>
+            <value>
+                <fullName>EXPRESO HERAL SRL</fullName>
+                <default>false</default>
+                <label>EXPRESO HERAL SRL</label>
+            </value>
+            <value>
+                <fullName>EXPRESO IMPERIAL SRL</fullName>
+                <default>false</default>
+                <label>EXPRESO IMPERIAL SRL</label>
+            </value>
+            <value>
+                <fullName>EXPRESO LANCIONI</fullName>
+                <default>false</default>
+                <label>EXPRESO LANCIONI</label>
+            </value>
+            <value>
+                <fullName>EXPRESO LIDER SA</fullName>
+                <default>false</default>
+                <label>EXPRESO LIDER SA</label>
+            </value>
+            <value>
+                <fullName>EXPRESO LO BRUNO SA</fullName>
+                <default>false</default>
+                <label>EXPRESO LO BRUNO SA</label>
+            </value>
+            <value>
+                <fullName>EXPRESO LUJAN DEL CUYO SA</fullName>
+                <default>false</default>
+                <label>EXPRESO LUJAN DEL CUYO SA</label>
+            </value>
+            <value>
+                <fullName>EXPRESO MALARGUE</fullName>
+                <default>false</default>
+                <label>EXPRESO MALARGUE</label>
+            </value>
+            <value>
+                <fullName>EXPRESO MALARGUE SA</fullName>
+                <default>false</default>
+                <label>EXPRESO MALARGUE SA</label>
+            </value>
+            <value>
+                <fullName>EXPRESO OLIVA SRL</fullName>
+                <default>false</default>
+                <label>EXPRESO OLIVA SRL</label>
+            </value>
+            <value>
+                <fullName>EXPRESO SANTA ROSA</fullName>
+                <default>false</default>
+                <label>EXPRESO SANTA ROSA</label>
+            </value>
+            <value>
+                <fullName>EXPRESO SER-PAQ SRL</fullName>
+                <default>false</default>
+                <label>EXPRESO SER-PAQ SRL</label>
+            </value>
+            <value>
+                <fullName>EXPRESO TAS</fullName>
+                <default>false</default>
+                <label>EXPRESO TAS</label>
+            </value>
+            <value>
+                <fullName>FELICI GERARDO FABIAN</fullName>
+                <default>false</default>
+                <label>FELICI GERARDO FABIAN</label>
+            </value>
+            <value>
+                <fullName>FELICI JORGE ARIEL</fullName>
+                <default>false</default>
+                <label>FELICI JORGE ARIEL</label>
+            </value>
+            <value>
+                <fullName>GILIO HECTOR GUSTAVO (ROSARIO ENCOMIENDAS)</fullName>
+                <default>false</default>
+                <label>GILIO HECTOR GUSTAVO (ROSARIO ENCOMIENDAS)</label>
+            </value>
+            <value>
+                <fullName>GIMENEZ SERGIO DANIEL (Transporte CaÃ±uelas)</fullName>
+                <default>false</default>
+                <label>GIMENEZ SERGIO DANIEL (Transporte CaÃ±uelas)</label>
+            </value>
+            <value>
+                <fullName>GURI OSCAR (MNC COMISIONES)</fullName>
+                <default>false</default>
+                <label>GURI OSCAR (MNC COMISIONES)</label>
+            </value>
+            <value>
+                <fullName>LA CAMIONERA MENDOCINA SA</fullName>
+                <default>false</default>
+                <label>LA CAMIONERA MENDOCINA SA</label>
+            </value>
+            <value>
+                <fullName>LA CAROLINA</fullName>
+                <default>false</default>
+                <label>LA CAROLINA</label>
+            </value>
+            <value>
+                <fullName>LA MULITA</fullName>
+                <default>false</default>
+                <label>LA MULITA</label>
+            </value>
+            <value>
+                <fullName>LA SEVILLANITA SRL</fullName>
+                <default>false</default>
+                <label>LA SEVILLANITA SRL</label>
+            </value>
+            <value>
+                <fullName>LOGISTICA CAFFERATTA</fullName>
+                <default>false</default>
+                <label>LOGISTICA CAFFERATTA</label>
+            </value>
+            <value>
+                <fullName>LOGISTICA CALOMARDE SA</fullName>
+                <default>false</default>
+                <label>LOGISTICA CALOMARDE SA</label>
+            </value>
+            <value>
+                <fullName>LOGISTICA LAURENCE SA (transrichard)</fullName>
+                <default>false</default>
+                <label>LOGISTICA LAURENCE SA (transrichard)</label>
+            </value>
+            <value>
+                <fullName>LOGISTICA Y DISTRIBUCION SH</fullName>
+                <default>false</default>
+                <label>LOGISTICA Y DISTRIBUCION SH</label>
+            </value>
+            <value>
+                <fullName>MALDONADO OSCAR JUAN RAMON</fullName>
+                <default>false</default>
+                <label>MALDONADO OSCAR JUAN RAMON</label>
+            </value>
+            <value>
+                <fullName>OCAMPO BELKIS (FELICI)</fullName>
+                <default>false</default>
+                <label>OCAMPO BELKIS (FELICI)</label>
+            </value>
+            <value>
+                <fullName>PANDOLFI RENE (TRANSPORTE SAN CAYETANO)</fullName>
+                <default>false</default>
+                <label>PANDOLFI RENE (TRANSPORTE SAN CAYETANO)</label>
+            </value>
+            <value>
+                <fullName>PIAZZA DAMIAN ALEJANDRO</fullName>
+                <default>false</default>
+                <label>PIAZZA DAMIAN ALEJANDRO</label>
+            </value>
+            <value>
+                <fullName>PUCHETTI EMMANUEL (Seven Express)</fullName>
+                <default>false</default>
+                <label>PUCHETTI EMMANUEL (Seven Express)</label>
+            </value>
+            <value>
+                <fullName>PUCHETTI JORGE ANIBAL</fullName>
+                <default>false</default>
+                <label>PUCHETTI JORGE ANIBAL</label>
+            </value>
+            <value>
+                <fullName>RAMIREZ FACUNDO ( logistica el rayo)</fullName>
+                <default>false</default>
+                <label>RAMIREZ FACUNDO ( logistica el rayo)</label>
+            </value>
+            <value>
+                <fullName>RAPI FLET CAROLINA SRL</fullName>
+                <default>false</default>
+                <label>RAPI FLET CAROLINA SRL</label>
+            </value>
+            <value>
+                <fullName>RETIRAN</fullName>
+                <default>false</default>
+                <label>RETIRAN</label>
+            </value>
+            <value>
+                <fullName>RF TRANSPORTE SA (CREDIFIN)</fullName>
+                <default>false</default>
+                <label>RF TRANSPORTE SA (CREDIFIN)</label>
+            </value>
+            <value>
+                <fullName>RICARDO PIERONI</fullName>
+                <default>false</default>
+                <label>RICARDO PIERONI</label>
+            </value>
+            <value>
+                <fullName>RICCA NICOLAS (TRANSPORTE NICO)</fullName>
+                <default>false</default>
+                <label>RICCA NICOLAS (TRANSPORTE NICO)</label>
+            </value>
+            <value>
+                <fullName>RODA AUSTRAL SA - EL RUTERO EXPRESS</fullName>
+                <default>false</default>
+                <label>RODA AUSTRAL SA - EL RUTERO EXPRESS</label>
+            </value>
+            <value>
+                <fullName>RODRIGUEZ ALEJANDRO Y ENNIS ARRIETA ROMAN SH (LOGISTICA CAFFERATA)</fullName>
+                <default>false</default>
+                <label>RODRIGUEZ ALEJANDRO Y ENNIS ARRIETA ROMAN SH (LOGISTICA CAFFERATA)</label>
+            </value>
+            <value>
+                <fullName>RODRIGUEZ HNOS. TRANSP. SA</fullName>
+                <default>false</default>
+                <label>RODRIGUEZ HNOS. TRANSP. SA</label>
+            </value>
+            <value>
+                <fullName>ROJAS JUAN PABLO</fullName>
+                <default>false</default>
+                <label>ROJAS JUAN PABLO</label>
+            </value>
+            <value>
+                <fullName>SANTOLARIA GUSTAVO</fullName>
+                <default>false</default>
+                <label>SANTOLARIA GUSTAVO</label>
+            </value>
+            <value>
+                <fullName>SERGIO MARASCIUOLO (TRANSPORTE ANDIAMO)</fullName>
+                <default>false</default>
+                <label>SERGIO MARASCIUOLO (TRANSPORTE ANDIAMO)</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTADORA DEL FIN DEL MUNDO SA (Transporte Delfin)</fullName>
+                <default>false</default>
+                <label>TRANSPORTADORA DEL FIN DEL MUNDO SA (Transporte Delfin)</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE AGUILAR S.R.L.</fullName>
+                <default>false</default>
+                <label>TRANSPORTE AGUILAR S.R.L.</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE Ã‘ANDUBAY SA</fullName>
+                <default>false</default>
+                <label>TRANSPORTE Ã‘ANDUBAY SA</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE CARROSIO Y VAIROLATTI</fullName>
+                <default>false</default>
+                <label>TRANSPORTE CARROSIO Y VAIROLATTI</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE CRUZ DEL SUR SA</fullName>
+                <default>false</default>
+                <label>TRANSPORTE CRUZ DEL SUR SA</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE DALOIA</fullName>
+                <default>false</default>
+                <label>TRANSPORTE DALOIA</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE DE CARGAS MORENO SRL</fullName>
+                <default>false</default>
+                <label>TRANSPORTE DE CARGAS MORENO SRL</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE EL PAMPERO</fullName>
+                <default>false</default>
+                <label>TRANSPORTE EL PAMPERO</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE EL PUMA</fullName>
+                <default>false</default>
+                <label>TRANSPORTE EL PUMA</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE HERNAN DE HERNAN D PAULTRONI</fullName>
+                <default>false</default>
+                <label>TRANSPORTE HERNAN DE HERNAN D PAULTRONI</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE IMPERIAL</fullName>
+                <default>false</default>
+                <label>TRANSPORTE IMPERIAL</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE ITALIA SRL</fullName>
+                <default>false</default>
+                <label>TRANSPORTE ITALIA SRL</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE JBA SERVICIOS SRL</fullName>
+                <default>false</default>
+                <label>TRANSPORTE JBA SERVICIOS SRL</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE MALDONADO</fullName>
+                <default>false</default>
+                <label>TRANSPORTE MALDONADO</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE MIGUEL DE MIGUEL DIST. SRL</fullName>
+                <default>false</default>
+                <label>TRANSPORTE MIGUEL DE MIGUEL DIST. SRL</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE MITRE ANDRES Y JUAN P DAMONTE</fullName>
+                <default>false</default>
+                <label>TRANSPORTE MITRE ANDRES Y JUAN P DAMONTE</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE MJA</fullName>
+                <default>false</default>
+                <label>TRANSPORTE MJA</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE MOSTTO</fullName>
+                <default>false</default>
+                <label>TRANSPORTE MOSTTO</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE NUEVA ROMA</fullName>
+                <default>false</default>
+                <label>TRANSPORTE NUEVA ROMA</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE PEDRITO</fullName>
+                <default>false</default>
+                <label>TRANSPORTE PEDRITO</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE PINTOR S.R.L.</fullName>
+                <default>false</default>
+                <label>TRANSPORTE PINTOR S.R.L.</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE POCCIA HNOS</fullName>
+                <default>false</default>
+                <label>TRANSPORTE POCCIA HNOS</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE PREMAT</fullName>
+                <default>false</default>
+                <label>TRANSPORTE PREMAT</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE PRIVITERA SRL</fullName>
+                <default>false</default>
+                <label>TRANSPORTE PRIVITERA SRL</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE RAOSA SRL</fullName>
+                <default>false</default>
+                <label>TRANSPORTE RAOSA SRL</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE RODRIGUEZ E HIJOS SRL</fullName>
+                <default>false</default>
+                <label>TRANSPORTE RODRIGUEZ E HIJOS SRL</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTES ALMAFUERTE SRL</fullName>
+                <default>false</default>
+                <label>TRANSPORTES ALMAFUERTE SRL</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE SANTA MARTA</fullName>
+                <default>false</default>
+                <label>TRANSPORTE SANTA MARTA</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE SEVEN EXPRESS</fullName>
+                <default>false</default>
+                <label>TRANSPORTE SEVEN EXPRESS</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE SILVIO</fullName>
+                <default>false</default>
+                <label>TRANSPORTE SILVIO</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE SNAIDER</fullName>
+                <default>false</default>
+                <label>TRANSPORTE SNAIDER</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE SONGINI</fullName>
+                <default>false</default>
+                <label>TRANSPORTE SONGINI</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE TIERRA SRL</fullName>
+                <default>false</default>
+                <label>TRANSPORTE TIERRA SRL</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE TOMASSINI</fullName>
+                <default>false</default>
+                <label>TRANSPORTE TOMASSINI</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE TRANS NOR</fullName>
+                <default>false</default>
+                <label>TRANSPORTE TRANS NOR</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE TRAVERSO</fullName>
+                <default>false</default>
+                <label>TRANSPORTE TRAVERSO</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE VIA CARGO</fullName>
+                <default>false</default>
+                <label>TRANSPORTE VIA CARGO</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE WILLINER</fullName>
+                <default>false</default>
+                <label>TRANSPORTE WILLINER</label>
+            </value>
+            <value>
+                <fullName>VALDIVIESO ANDRES MARIO</fullName>
+                <default>false</default>
+                <label>VALDIVIESO ANDRES MARIO</label>
+            </value>
+            <value>
+                <fullName>VILCHE IVAN</fullName>
+                <default>false</default>
+                <label>VILCHE IVAN</label>
+            </value>
+            <value>
+                <fullName>Transporte</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Transporte</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quote_Syncing</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  ISPICKVAL(Status, &quot;Accepted&quot;),
+  ISCHANGED(Status),
+  NOT(IsSyncing)
+)</errorConditionFormula>
+    <errorDisplayField>IsSyncing</errorDisplayField>
+    <errorMessage>Por favor, sincronizar el presupuesto</errorMessage>
+</ValidationRule>

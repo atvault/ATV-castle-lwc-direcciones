@@ -1,0 +1,7 @@
+.slds-text-color_error {
+    color: var(--slds-color-text-error, #c23934);
+}
+
+.slds-text-color_weak {
+    color: var(--slds-color-text-weak, #706e6b);
+}
