@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>ATV_Selected_Shipping_Address__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
-    <label>Selected Shipping Address</label>
+    <label>Direccion de envío seleccionada</label>
     <lookupFilter>
         <active>true</active>
         <filterItems>

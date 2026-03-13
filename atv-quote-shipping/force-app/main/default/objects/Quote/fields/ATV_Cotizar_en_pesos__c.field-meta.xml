@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ATV_Cotizar_en_pesos__c</fullName>
+    <defaultValue>false</defaultValue>
+    <label>GOA en pesos</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

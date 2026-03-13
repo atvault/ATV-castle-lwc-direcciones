@@ -7,7 +7,7 @@
     <columns>QUOTE.EXPIRATIONDATE</columns>
     <columns>QUOTE.TOTALPRICE</columns>
     <columns>QUOTE.TAX</columns>
-    <columns>ID_Netsuite__c</columns>
+    <columns>QUOTE.QUOTENUMBER</columns>
     <filterScope>Everything</filterScope>
     <label>Todos los presupuestos</label>
 </ListView>

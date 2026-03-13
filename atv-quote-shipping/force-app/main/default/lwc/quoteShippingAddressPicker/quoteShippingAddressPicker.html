@@ -4,55 +4,90 @@
             <!-- Mensaje si no hay AccountId -->
             <template if:false={hasAccountId}>
                 <div class="slds-text-color_error slds-m-bottom_small">
-                    <lightning-icon icon-name="utility:warning" size="small" class="slds-m-right_x-small"></lightning-icon>
+                    <lightning-icon
+                        icon-name="utility:warning"
+                        size="small"
+                        class="slds-m-right_x-small"
+                    ></lightning-icon>
                     Seteá primero la Cuenta en la Quote
                 </div>
             </template>
-            
-            <!-- Mensaje si hay AccountId pero no hay direcciones -->
+
+            <!-- Contenido principal cuando hay AccountId -->
             <template if:true={hasAccountId}>
-                <template if:false={hasDirecciones}>
-                    <div class="slds-text-color_weak slds-m-bottom_small">
-                        <lightning-icon icon-name="utility:info" size="small" class="slds-m-right_x-small"></lightning-icon>
-                        No hay direcciones de envío disponibles para esta cuenta
-                    </div>
-                </template>
-            </template>
-            
-            <!-- Combobox y botón si hay direcciones -->
-            <template if:true={hasDirecciones}>
-                <div class="slds-form-element slds-m-bottom_small">
+                <div class="slds-form-element slds-m-bottom_medium">
                     <label class="slds-form-element__label" for="direccion-select">
-                        Seleccionar Dirección
+                        Direcciones disponibles de la cuenta
                     </label>
-                    <div class="slds-form-element__control">
-                        <lightning-combobox
-                            id="direccion-select"
-                            name="direccion"
-                            label=""
-                            value={selectedDireccionId}
-                            placeholder="Seleccionar dirección..."
-                            options={direccionOptions}
-                            onchange={handleDireccionChange}
-                            class="slds-m-bottom_small">
-                        </lightning-combobox>
-                    </div>
+
+                    <template if:false={hasDirecciones}>
+                        <div class="slds-text-color_weak slds-m-top_x-small">
+                            <lightning-icon
+                                icon-name="utility:info"
+                                size="small"
+                                class="slds-m-right_x-small"
+                            ></lightning-icon>
+                            No hay direcciones de envío cargadas para esta cuenta
+                        </div>
+                    </template>
+
+                    <template if:true={hasDirecciones}>
+                        <div class="slds-form-element__control slds-m-top_x-small">
+                            <lightning-combobox
+                                id="direccion-select"
+                                name="direccion"
+                                label=""
+                                value={selectedDireccionId}
+                                placeholder="Elegí una dirección..."
+                                options={direccionOptions}
+                                onchange={handleDireccionChange}
+                                class="slds-m-bottom_small"
+                            >
+                            </lightning-combobox>
+                        </div>
+                        <!-- Detalle de la dirección seleccionada: se muestra Localidad en lugar de Shipping City -->
+                        <template if:true={selectedDireccion}>
+                            <div class="slds-box slds-box_x-small slds-m-top_small slds-theme_shade">
+                                <div class="slds-text-title_caps slds-m-bottom_x-small">Detalle de la dirección</div>
+                                <template if:true={selectedDireccion.street}>
+                                    <div class="slds-m-bottom_x-small"><span class="slds-text-body_small slds-text-color_weak">Calle:</span> {selectedDireccion.street}</div>
+                                </template>
+                                <template if:true={selectedDireccion.localidadDisplay}>
+                                    <div class="slds-m-bottom_x-small"><span class="slds-text-body_small slds-text-color_weak">Localidad:</span> {selectedDireccion.localidadDisplay}</div>
+                                </template>
+                                <template if:true={selectedDireccion.state}>
+                                    <div class="slds-m-bottom_x-small"><span class="slds-text-body_small slds-text-color_weak">Estado o Provincia:</span> {selectedDireccion.state}</div>
+                                </template>
+                                <template if:true={selectedDireccion.postalCode}>
+                                    <div class="slds-m-bottom_x-small"><span class="slds-text-body_small slds-text-color_weak">Código postal:</span> {selectedDireccion.postalCode}</div>
+                                </template>
+                                <template if:true={selectedDireccion.country}>
+                                    <div class="slds-m-bottom_x-small"><span class="slds-text-body_small slds-text-color_weak">País:</span> {selectedDireccion.country}</div>
+                                </template>
+                            </div>
+                        </template>
+                    </template>
                 </div>
-                
+
                 <lightning-button
                     variant="brand"
                     label="Aplicar"
-                    title="Aplicar dirección seleccionada"
+                    title="Aplicar la dirección elegida a los campos de envío del Quote"
                     onclick={handleApply}
                     disabled={isButtonDisabled}
-                    class="slds-m-top_small">
+                    class="slds-m-top_small"
+                >
                 </lightning-button>
             </template>
-            
-            <!-- Spinner mientras carga -->
+
+            <!-- Spinner mientras se aplica -->
             <template if:true={isLoading}>
-                <lightning-spinner alternative-text="Aplicando dirección..." size="small"></lightning-spinner>
+                <lightning-spinner
+                    alternative-text="Aplicando dirección..."
+                    size="small"
+                ></lightning-spinner>
             </template>
         </div>
     </lightning-card>
 </template>
+

@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "description": "Salesforce App",
   "scripts": {
+    "deploy:prod": "sf project deploy start --target-org castle-global-prod --test-level RunSpecifiedTests --tests ATV_QuoteShippingAddressCtrlTest",
     "lint": "eslint **/{aura,lwc}/**/*.js",
     "test": "npm run test:unit",
     "test:unit": "sfdx-lwc-jest",

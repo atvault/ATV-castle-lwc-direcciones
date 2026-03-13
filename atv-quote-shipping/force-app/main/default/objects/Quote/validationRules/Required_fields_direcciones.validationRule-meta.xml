@@ -6,7 +6,7 @@
   ISPICKVAL(Status, &quot;Accepted&quot;),
   ISCHANGED(Status),
   OR(
-    ISBLANK(Direcciones__c)
+    ISBLANK(ShippingAddress)
   )
 )</errorConditionFormula>
     <errorDisplayField>Direcciones__c</errorDisplayField>

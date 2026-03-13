@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ATV_NTS_Localidad__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Localidad</label>
+    <referenceTo>ATV_NTS_Localidades__c</referenceTo>
+    <relationshipLabel>Direcciones de envío</relationshipLabel>
+    <relationshipName>Direcciones_de_env_o</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>
