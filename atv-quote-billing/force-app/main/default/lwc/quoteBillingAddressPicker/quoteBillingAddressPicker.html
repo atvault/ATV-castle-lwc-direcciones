@@ -1,0 +1,47 @@
+<template>
+    <lightning-card title="Direccion de Facturacion" icon-name="standard:address">
+        <div class="slds-p-around_small">
+            <template if:false={hasAccountId}>
+                <div class="slds-text-color_error slds-m-bottom_small">Setea primero la Cuenta en la Quote</div>
+            </template>
+
+            <template if:true={hasAccountId}>
+                <div class="slds-form-element slds-m-bottom_medium">
+                    <label class="slds-form-element__label" for="direccion-select">Direcciones de facturacion disponibles de la cuenta</label>
+
+                    <template if:false={hasDirecciones}>
+                        <div class="slds-text-color_weak slds-m-top_x-small">No hay direcciones cargadas para esta cuenta</div>
+                    </template>
+
+                    <template if:true={hasDirecciones}>
+                        <div class="slds-form-element__control slds-m-top_x-small">
+                            <lightning-combobox
+                                id="direccion-select"
+                                name="direccion"
+                                label=""
+                                value={selectedDireccionId}
+                                placeholder="Elegi una direccion..."
+                                options={direccionOptions}
+                                onchange={handleDireccionChange}
+                                class="slds-m-bottom_small"
+                            ></lightning-combobox>
+                        </div>
+                    </template>
+                </div>
+
+                <lightning-button
+                    variant="brand"
+                    label="Aplicar"
+                    title="Aplicar la direccion elegida a los campos de facturacion del Quote"
+                    onclick={handleApply}
+                    disabled={isButtonDisabled}
+                    class="slds-m-top_small"
+                ></lightning-button>
+            </template>
+
+            <template if:true={isLoading}>
+                <lightning-spinner alternative-text="Aplicando direccion..." size="small"></lightning-spinner>
+            </template>
+        </div>
+    </lightning-card>
+</template>

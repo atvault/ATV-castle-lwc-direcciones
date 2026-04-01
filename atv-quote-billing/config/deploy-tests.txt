@@ -1,0 +1,3 @@
+# Tests que se ejecutan en deploy a producción (Billing)
+ATV_QuoteBillingAddressCtrlTest
+ATV_AssignDireccionAccountByNSBatchTest

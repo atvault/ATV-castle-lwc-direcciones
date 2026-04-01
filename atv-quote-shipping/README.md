@@ -271,6 +271,7 @@ La lista de tests usados en producción está en `config/deploy-tests.txt`.
 | Comando | Descripción |
 |---------|-------------|
 | `npm run deploy:prod` | Deploy a producción (castle-global-prod) con tests especificados. |
+| `npm run deploy:prod:shipping` | Deploy solo de la feature de envío (manifest separado). |
 | `npm run lint` | Ejecuta ESLint en Aura/LWC. |
 | `npm run test` | Tests unitarios LWC (Jest). |
 | `npm run test:unit:coverage` | Tests LWC con cobertura. |

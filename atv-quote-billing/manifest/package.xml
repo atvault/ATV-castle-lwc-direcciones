@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>ATV_QuoteBillingAddressCtrl</members>
+        <members>ATV_QuoteBillingAddressCtrlTest</members>
+        <members>ATV_AssignDireccionAccountByNSBatch</members>
+        <members>ATV_AssignDireccionAccountByNSBatchTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>quoteBillingAddressPicker</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <types>
+        <members>Quote.ATV_Selected_Billing_Address__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>ATV_NTS_Direccion_de_Envio__c.Direccion_predeterminada_facturacion__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>ATV_apaga_direcciones_predeterminadas_facturacion</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>Agrega_la_direcci_n_facturacion_al_Quote</members>
+        <name>Flow</name>
+    </types>
+    <version>64.0</version>
+</Package>
